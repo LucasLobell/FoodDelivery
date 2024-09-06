@@ -7,7 +7,7 @@ const Featured = () => {
     <div className='w-screen overflow-x-scroll text-red-500'>
       <div className='w-max flex'>
         {featuredProducts.map((item) => (
-        <div key={item.id} className='w-screen h-[70vh] flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]'>
+        <div key={item.id} className='w-screen h-[60vh] flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]'>
           {item.img && (
             <div className='relative flex-1 w-full hover:rotate-[60deg] transition-all duration-500'>
               <Image src={item.img} alt='' fill className='object-contain' />
