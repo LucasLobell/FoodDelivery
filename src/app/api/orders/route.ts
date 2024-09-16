@@ -13,7 +13,7 @@ export const GET = async (req: NextRequest) => {
             }
             const orders = prisma.order.findMany({
                 where: {
-                    //userEmail: session.user.email!
+                    userEmail: session.user.email!
                 }
             })
         } catch (err) {
